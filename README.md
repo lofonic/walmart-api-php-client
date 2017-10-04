@@ -72,7 +72,7 @@ $apiKey = 'yourWalmartApiKey';
 //Basic components used by the Services
 $httpClient        = new \GuzzleHttp\Client();
 $errorHandler      = new \WalmartApiClient\Exception\Handler\ApiExceptionHandler();
-$transportService  = new \WalmartApiClient\Http\TransportService($httpClient, $errorHandler, $apiUrl);
+$transportService  = new \WalmartApiClient\Http\TransportService($httpClient, $errorHandler, $apiKey);
 $entityFactory     = new \WalmartApiClient\Factory\EntityFactory();
 $collectionFactory = new \WalmartApiClient\Factory\CollectionFactory();
 
